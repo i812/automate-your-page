@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Dave's Nanodegree Notes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <h1>Stage 1 Notes</h1>
+
+    <div class="lesson">
+      <h2><b>Lesson 1: Basics of the Web & HTML</b></h2>
+
+      <div class="section">
+        <p>A webpage is a text document written in a language called HTML. Web browsers read these documents, and interpret and display them.
+        </p>
+
+        <p>Coding means telling a computer what you want it to do in a way it can understand. Programmers write text in a language that a computer can understand, and the computer follows the instructions of the written text
+        </p>
+
+          <div class="section-title">
+        "Computers are Stupid"
+        </div>
+
+        <p>
+        Programmers need to write exactly the way a computer understands (also known as writing with correct "Syntax"). One typo in the code can cause the whole thing to not work.
+        </p>
+
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          ** What the Web is, What it Looks Like, and How it Works **
+        </div>
+
+        <p>
+          The World Wide Web was invented in the early 1990s.
+          <br>A collection of HTML documents. HTML ties all content together with hyperlinks.
+          <br>HTML: main document type of the web.
+          <br>URL: how you refer to documents on the web.
+          <br>HTTP: protocol that unites the web & that the web runs on.
+          <br>Web Applications
+        </p>
+
+          <div class="section-title">
+            ** Major Concepts / Pieces of the Web **
+          </div>
+
+          <p>
+            You
+            <br>Your computer & web browser
+            <br>The Internet
+            <br>Servers
+            <br>Your browser makes makes requests using a protocol called HTTP via the Internet to Servers.
+            <br>Servers are computers, only optimized to host files instead of sitting on your desk browsing those files.
+            <br><a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496" target="_blank">This video</a> explains the process.
+          </p>
+        </div>
+
+      <div class="section">
+
+          <div class="section-title">
+            HTML
+          </div>
+
+          <p>
+            HTML stands for <em><b>Hypertext Markup Language.</b></em>
+            <br><br>HTML documents are the heart of the web. HTML documents contain text content <em>(what you see)</em>, markup <em>(what the content looks like)</em>, references to other documents <em>(images, videos, etc.)</em>, and links to other pages <em>(hyperlinks)</em>.
+            <br><br><a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340" target="_blank">This video</a> gives a good overview.
+          </p>
+        </div>
+
+        <div class="section">
+
+          <div class="section-title">
+            Tags and Elements
+          </div>
+
+          <p>
+            Tags are always contained within angled brackets
+            <br><br>An opening tag is the left angled bracket, followed by the name of the tag, then the right angled bracket. A closing tag is the left angled bracket, followed by a slash ("/") and "the name of the tag, then the right angled bracket.
+            <br><br>Most tags are structured with an opening tag and a closing tag. Some tags do not require a closing tag. These are called "Void" tags.
+            <br><br>A tag as a whole is called an <b><em>element</em></b>. An HTML element refers to everything within a set of opening and closing tags.
+            <br><br><a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444" target="_blank">This video</a> explains the distinction between tags & elements well.
+          </p>
+        </div>
+
+        <div class="section">
+
+          <div class="section-title">
+            Attributes
+          </div>
+
+          <p>
+            An Attribute is the property assigned to an HTML element (eg. the href attribute of an anchor tag)
+          </p>
+        </div>
+
+        <div class="section">
+
+          <div class="section-title">
+            Inline Elements and Block Elements
+          </div>
+
+          <p>
+            Inline elements are just text.
+            <br><br>Block elements form an "invisible box" around the content inside of them, which gives an extra line space.
+            <br><br><a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-3873828673/m-48723438" target="_blank">This video</a> does a good job of explaining the difference.
+          </p>
+        </div>
+
+        <div class="section">
+
+          <div class="section-title">
+            Structure of an actual complete HTML Document:
+          </div>
+
+          <p>
+            1. Doctype - what kind of HTML used
+            <br><br>2. HTML Tags surrounds the rest of the entire document (opening / closing tags)
+            <br><br>3. Head Tag has meta-data and other random stuff and contains information that won't be displayed on the page
+            <br><br>Javascript & CSS / Styling are included in the Head section
+            <br><br>4. Title Tag contains the title of your page (normally sets the name of the browser tab)
+            <br><br>5. Body Tag contains the actual content of the document
+          </p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <h2><b>Lesson 2: Creating a Structured Document with HTML</b></h2>
+
+        <div class="section">
+          HTML files are the structure of a website
+          <br>CSS files are the design/style of a website
+          <br>Javascript files are interactive components that change some element of a website
+          <br>Tools are needed to build websites
+          <br>HTML and CSS are both "languages"
+        </div>
+
+        <div class="section">
+
+            <div class="section-title">
+              HTML - HyperText Markup Language
+            </div>
+
+            <p>
+              - Defines/controls the structure & content of a web page
+              <br><br>- The standard markup language used to create web pages
+              <br><br>- Syntax + Rules
+              <br><br>- Browser turns HTML tags into elements that form a "DOM Tree"
+            </p>
+          </div>
+
+          <div class="section">
+
+            <div class="section-title">
+              CSS - Cascading Style Sheets
+            </div>
+
+            <p>
+              - Style sheet language used for describing the look and formatting of a document written in a markup language
+              <br><br>- Syntax + Rules to change how elements look on the page - size of font, color, borders, etc.
+             <br><br>- Defines/controls the "style" of a web page (how it looks)
+           </p>
+         </div>
+
+         <div class="section">
+
+          <div class="section-title">
+            DOM - Document Object Model
+          </div>
+
+          <p>
+            - A cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages).
+            <br><br>- When programmers talk about the "DOM" (Document Object Model), they are talking about the tree-like structure of a page. The nodes of every document are organized in a tree structure, called the DOM tree.
+          </p>
+        </div>
+      </div>
+
+  <div class="lesson">
+    <h2><b>Lesson 3: Adding CSS to HTML Structure</b></h2>
+
+    <div class="section">
+      <div class="section-title">
+        CSS - Cascading Style Sheet
+      </div>
+
+      <p>
+        - Code written by programmers to control the style of related HTML elements, by giving similar HTML elements the same class name and then specifying the style that should apply to that given class.
+        <br><br>- "Cascading means that rules are applied not only to the elements they directly match, but those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes place.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">
+        Avoids Repetition
+      </div>
+
+      <p>
+        Repeatedly doing the same thing over & over in different HTML elements to give them a specific style results in repeated code or very similar code with minor differences. When changes need to be made, it is difficult to remember every place that style is repeated in the HTML elements. Having to manually make those changes in every location can lead to typos or errors, or result in a difference in style where the programmer might want the same style applied.
+      </p>
+
+      <div class="section-title">
+        Consistency
+      </div>
+
+      <p>
+        Specify a style for a given class in one place (CSS style sheet), and assign that class to multiple parts of the HTML document. This makes it easy to make changes to the styles, as you only have to make the change to the class in CSS, resulting in the same change to every part of the HTML document that class is assigned to.
+      </p>
+
+      <div class="section-title">
+        Inheritance
+      </div>
+
+      <p>
+        The mechanism by which properties are applied not only to a specified element, but also to its child elements.
+        <br><br>Relies on the document tree, the hierarchy of HTML elements in a page based on nesting.
+    </div>
+
+    <div class="section">
+      It matters where you define the rules and in what order they are applied. Styles can be defined in different places. They are applied in the following order, with definitions further down the list overwriting previous definitions:
+      <br><br>1. default stylesheet of a browser (different browsers have slightly different styles)
+      <br><br>2. stylesheet in a separate file (what we will mostly be using)
+      <br><br>3. stylesheet inside the HTML (can be done for small projects but not ideal)
+      <br><br>4. inline style in an element (can also be done but should be avoided)
+
+    </div>
+
+  </div>
+
+  <h1>Stage 2 Notes</h1>
+
+  <div class="lesson">
+    <h2>Lesson 1: Introduction to Serious Programming</h2>
+
+    <div class="section">
+
+      <div class="section-title">
+        Computer Science
+      </div>
+
+      <p>How to solve problems by breaking them into smaller pieces, then precisely & mechanically describing a sequence of steps that you can use to solve each piece, and those steps can be executed by a computer.
+      </p>
+
+      <div class="section-title">
+        Computer
+      </div>
+
+      <p>A computer is a machine that can be programmed
+      <br>- a general purpose device that can be programmed to carry out a finite set of arithmetic or logical operations
+      </p>
+
+    </div>
+
+    <div class="section">
+
+      <div class="section-title">
+        Computer Program
+      </div>
+
+      <p>A computer program is a sequence of instructions written to perform a specified task with a computer
+        <br><br>- tells the computer what to do
+        <br><br>- without a program, a computer is useless
+      </p>
+
+      <div class="section-title">
+        Programming Language
+      </div>
+
+      <p>Code written by programmers to tell computers what to do
+        <br><br>- Python is a programming language
+      </p>
+
+      <div class="section-title">
+        Python
+      </div>
+        
+      <p>A high level programming language used to write programs;
+        <br><br>Instead of a program running directly on the computer, the program is input to the Python program, which runs on the computer;
+      </p>
+
+      <p>Python is an Interpreter
+        <br><br>- runs the programs, interprets them, executes the program written in the Python language by running a program in the language that the computer can understand directly
+        <br><br>- converts the written code as a set of instructions that the computer itself can understand and execute
+      </p>
+
+    </div>
+
+    <div class="section">
+
+      <div class="section-title">
+        Grammar and Expressions
+      </div>
+
+      <p>A grammar is a specification of what is "correct" and what is "incorrect."
+        <br><br>Code must be exactly "correct" according to the Python Interpreter, otherwise the code won't run
+        <br><br><a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-4180729266/m-48719240" target="blank">This video</a> explains grammar and how it is used in programming
+        <br><br>An expression is something that has a value
+        <br><br><a href="https://www.udacity.com/course/viewer/#!/c-nd000/l-4180729266/e-48704311/m-48736065" target="blank">This video</a> demonstrates  Python grammar being used for an expression
+      </p>      
+
+    </div>
+
+  <div class="lesson">
+    <h2>Lesson 2: Variables and Strings</h2>
+
+    <div class="section">
+
+      <div class="section-title">
+        Variables
+      </div>
+
+      <p>A variable is an assignment statement
+        <br><br>A variable gives programmers a way to give names to values and assign names to expressions
+        <br><br>- gives a way to store the value of data
+        <br><br>- gives a way to change the value of something
+        <br><br>- the same expression can have different meanings different times we evaluate it
+        <br><br>- the value of a variable will change when we reassign the variable to a different value later
+      </p>
+    </div>
+
+    <div class="section">
+
+      <div class="section-title">
+        The EQUALS sign ("=")
+      </div>
+
+      <p>What is the difference between what the equals sign (=) in math vs programming?
+        <br><br>The equals sign in a variable means "assignment", not "equals"
+        <br><br>In math, the equals sign means "the same as"
+        <br><br>In programming, the equals sign means "takes the value of"
+      </p>
+    </div>
+
+    <div class="section">
+
+      <div class="section-title">
+        Strings
+      </div>
+
+      <p>A string is a sequence of characters surrounded by quotes
+        <br><br>Indexing strings is extracting subsequences from a string
+        <br><br>Selecting subsequences from a string pulls a sequence of characters from the string
+        <br><br>Finding strings in strings is a way to find the first string of characters within a string
+      </p>
+    </div>
+
+  <div class="lesson">
+    <h2>Lesson 3: Input --> Function --> Output</h2>
+
+    <div class="section">
+
+      <div class="section-title">
+        Functions (AKA "Procedures")
+      </div>
+
+      <p>A function maps inputs & outputs
+        <br><br>- it takes input, does something to that input, and produces output
+
+        <div class="section-title">
+          MAKING a Function
+        </div>
+
+        <p>Start a line of code with a definition (def) and then give the function a name, followed by the function parameters in parentheses. The parameters will be replaced by actual values later when the function is used.
+          <br><br>'def' defines a function 
+          <br>- part of "making a function"
+          <br>- assigns a name to a function and tells the program what the parameters of the function are (in parentheses)
+        </p>
+
+        <div class="section-title">
+          USING a Function
+        </div>
+
+        <p>Write the name of the function (defined when "making" the function) followed by the values given to it in parentheses.
+          <br><br>'return' returns output
+          <br>- part of "using a function"
+          <br>- without the return statement, Python will not know what the function should produce as output and therefore will not produce output
+        </p>
+      </div>
+
+      <div class="section">
+
+        <div class="section-title">
+          How do functions help programmers avoid repetition?
+        </div>
+
+        <p>Functions are tools that programmers can create and reuse. Once a function is defined once, it never has to be defined again.
+        </p>
+
+      </div>
+
+  </div>
+
+
+  <div class="lesson">
+    <h2>Lesson 4, 5, 6, & 7:
+            <br>Controls & Loops: If & While Statements,
+            <br>Debugging,
+            <br>Structured Data: Lists & For Loops,
+            <br>How to Solve Problems</h2>
+
+
+
+<div class="concept">
+    <div class="concept-title">
+        If Statements
+    </div>
+    <div class="concept-description">
+        If Statements use comparisons to make decisions and make the code do something different depending on the results of a comparison
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-title">
+        While Statements
+    </div>
+    <div class="concept-description">
+        Loop (code that tells the program to do something over and over again)<br>As long as a 'text expression' is true, do something over and over again until the 'text expression' is false
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-title">
+        Break Statement
+    </div>
+    <div class="concept-description">
+        A break statement gives a way to stop the loop even while the 'text expression' is true
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-title">
+        Debugging
+    </div>
+    <div class="concept-description">
+        Bugs are errors in code that cause the code not to work<br>Debugging is a scientific process of examining code to discover things you didn't expect in it<br>To debug, you need to develop a strategy for systematically getting rid of bug<br>When Python code crashes, the message it gives is called a Traceback<br>--- a Traceback tells what line it crashed on, what file it was running, and how it got there<br>--- the information in the Traceback can focus your attention on the part of the code that might be going wrong<br>--- pay attention to the line # & function name to see if you can figure out where the problem lies
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-title">
+        Five Debugging Strategies
+    </div>
+    <div class="concept-description">
+        Examine error messages when programs crash<br>Work from example code<br>Make sure examples work (test, test, test!)<br>Check intermediate results by adding print statements<br>Keep and compare old versions
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-title">
+        <div class="flowchart">Below is a cool flowchart I found that can help with Python Error Codes
+    </div>
+    <div class="concept-description">
+        <br><a href="http://i.imgur.com/WRuJV6r.png"><img src="http://i.imgur.com/WRuJV6rl.png" title="python debugging flowchart"></a>"</div>
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-title">
+        Structured Data: Lists & For Loops
+    </div>
+    <div class="concept-description">
+        Strings - sequence of characters<br>Lists - sequence of anything<br>Mutation - changing the value of a list after we've created it<br>Aliasing - two different ways to refer to the same object<br>List Operations<br>--- Append Operator: appends a list, adding an additional element to the original list<br>--- Plus Operator: <list> + <list>, makes a new list made up of original lists, doesn't change original lists<br>--- Len Operator: len(<list>), length of any object that is a collection of things<br>--- Index Operator: pass in a value, the output of the index is the position of that value in the list (if the value is in the list, it returns the first position that value is found, otherwise produces an error<br>--- In / Not In: <value> in <list> - if value is in list, output is true, otherwise output is false; <value> not in <list> - if value is not in list, output is true, otherwise output is false<br><br>Append adds an addition element to the end of a list (even if new element is a list, it's only one element)<br>Plus adds a list to a list (items within the list are added to the list)<br>For Loop: used to iterate items in a list
+    </div>
+</div>
+<div class="concept">
+    <div class="concept-title">
+        How to Solve Problems
+    </div>
+    <div class="concept-description">
+        Problem is defined by possible inputs (set) and the relationship between the inputs and the desired outputs<br><br>1st Step:  Don't Panic!!<br>1. What are the inputs?<br>--- How are the inputs represented?<br>2. What are the desired outputs?<br>3. Solve the problem<br>--- Work out examples<br>--- Consider systematically how a human solves the problem<br>4. Come up with a simple mechanical solution<br>5. Develop incrementally and test as you go<br><br>Put assertion commands into your code to test conditions and trigger an error if condition is false
+    </div>
+</div>
+
+
+
+
+  </div>
+
+  </body>
+
+</html>
